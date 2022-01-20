@@ -41,8 +41,8 @@
     }
 
     h1 {
-        font-size: 30px;
-        font-family: Roboto;
+        font-size: 20px;
+        font-family: roboto;
         text-align: center;
         margin: 10px;
         color: red;
@@ -51,7 +51,20 @@
     h2 {
         margin-bottom: 5%;
     }
-
+</style>
+<title>Untitled Document</title>
+    <span>
+        <link rel="icon" href="kix-favicon7.ico" type="image/icon type">
+        <div id="content">
+            <p>SussyTabs3.0</p>
+            <h1>Dont sue me</h1>
+            <input autofocus type="text" id="text">
+        </div>
+        <iframe id="iframe" frameborder="0" width="0%" height="0%"></iframe>
+    </span>
+<script>
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode === 13) {
                 var text = "https://" + document.getElementById("text").value;
                 document.getElementById('iframe').src = text;
                 document.getElementById('iframe').width = "100%";
