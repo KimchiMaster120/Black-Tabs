@@ -41,7 +41,7 @@
         color: cyan;
     }
 
-    h1 {
+    e1 {
         font-size: 35px;
         font-family: Roboto;
         text-align: center;
@@ -49,7 +49,7 @@
         color: red;
     }
 
-    h2 {
+    e2 {
         margin-bottom: 5%;
     }
 </style>
@@ -57,7 +57,7 @@
     <span>
         <div id="content">
             <p>Black Tabs</p>
-            <h1>Enter Web Address</h1>
+            <e1>Enter Web Address</e1>
             <input autofocus type="text" id="text">
         </div>
         <iframe id="iframe" frameborder="0" width="0%" height="0%"></iframe>
@@ -66,10 +66,10 @@
         document.addEventListener('keydown', function (event) {
             if (event.keyCode === 13) {
                 var text = "https://" + document.getElementById("text").value;
-                document.getElementById('iframe').src = text;
-                document.getElementById('iframe').width = "100%";
-                document.getElementById('iframe').height = "100%";
                 document.getElementById("content").innerHTML = '';
+                document.getElementById('iframe').src = text;
+                document.getElementById('iframe').height = "100%";
+                document.getElementById('iframe').width = "100%";
             }
         });
 </script>
