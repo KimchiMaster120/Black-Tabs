@@ -6,7 +6,15 @@
         color: cyan;
     }
 
-    input {
+    input:focus {
+        border: 4px solid cyan;
+        border-radius: 50px;
+        outline: none;
+        font-weight: bolder;
+        background: rgb(0, 0, 0);
+    }
+    
+        input {
         border: 4px solid cyan;
         border-radius: 50px;
         height: 8%;
@@ -21,15 +29,6 @@
         padding-left: 33px;
         font-weight: bolder;
     }
-
-    input:focus {
-        border: 4px solid cyan;
-        border-radius: 50px;
-        outline: none;
-        font-weight: bolder;
-        background: rgb(0, 0, 0);
-    }
-    
     
     p {
         font-size: 50px;
@@ -66,8 +65,8 @@
         document.addEventListener('keydown', function (event) {
             if (event.keyCode === 13) {
                 var text = "https://" + document.getElementById("text").value;
-                document.getElementById("content").innerHTML = '';
                 document.getElementById('iframe').src = text;
+                document.getElementById("content").innerHTML = '';
                 document.getElementById('iframe').height = "100%";
                 document.getElementById('iframe').width = "100%";
             }
