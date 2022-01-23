@@ -86,14 +86,19 @@
 </html>
 
 <html>
-<script>
+<body>
+    <div id="content">
+	<div class="sectionleft">
+		<input placeholder="Ex: slopeunblocked.online" id="input">
+	</div>
+	<div class="sectionright">
+		<div class="header">
+			<a onclick="simpleunblocker()" href="#">Simple Unblocker</a><br><br>
+		</div><br><br>
+	</div>
+    </div>
     <iframe src="https://thesimpleunblocker.com" frameborder="0" height="0%" width="0%" id="iframe"></iframe>
-    <a onclick="simpleunblocker()" href="#">Simple Unblocker</a><br><br>
-     function simpleunblocker() {
-                document.getElementById("iframe").src = "http://thesimpleunblocker.com/";
-                document.getElementById("iframe").height = "100%";
-                document.getElementById("iframe").width = "100%";
-                document.getElementById("content").innerHTML = '';
-            }     function simpleunblocker() {
-</script>
+	<script src="script.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
 </html>
