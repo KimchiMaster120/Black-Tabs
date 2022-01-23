@@ -61,7 +61,6 @@
             <p>Black Tabs</p>
             <h1>Enter Web Address</h1>
             <input autofocus type="text" id="text">
-            <a onclick="simpleunblocker()" href="#">Simple Unblocker</a><br><br>
         </div>
         <iframe id="iframe" frameborder="0" width="0%" height="0%"></iframe>
     </span>
@@ -74,12 +73,6 @@
                 document.getElementById('iframe').height = "100%";
                 document.getElementById('iframe').width = "100%";
             }   
-            function simpleunblocker() {
-                document.getElementById("iframe").src = "http://thesimpleunblocker.com/";
-                document.getElementById("iframe").height = "100%";
-                document.getElementById("iframe").width = "100%";
-                document.getElementById("content").innerHTML = '';
-            }
         });
 </script>
 
@@ -90,4 +83,17 @@
 <h1> use "thesimpleunblocker.com" for sites that don't work </h1>
     
 </body>
+</html>
+
+<html>
+<script>
+    <iframe src="https://thesimpleunblocker.com" frameborder="0" height="0%" width="0%" id="iframe"></iframe>
+    <a onclick="simpleunblocker()" href="#">Simple Unblocker</a><br><br>
+     function simpleunblocker() {
+                document.getElementById("iframe").src = "http://thesimpleunblocker.com/";
+                document.getElementById("iframe").height = "100%";
+                document.getElementById("iframe").width = "100%";
+                document.getElementById("content").innerHTML = '';
+            }     function simpleunblocker() {
+</script>
 </html>
