@@ -1,0 +1,84 @@
+<style>
+    body {
+        margin: 0 auto;
+        font-family: Roboto;
+        background:rgb(0, 0, 0);
+        color: cyan;
+    }
+
+    input:focus {
+        border: 4px solid cyan;
+        border-radius: 50px;
+        outline: none;
+        font-weight: bolder;
+        background: rgb(0, 0, 0);
+    }
+    
+        input {
+        border: 4px solid cyan;
+        border-radius: 50px;
+        height: 8%;
+        font-size: 30px;
+        font-family: Roboto;
+        display: block;
+        margin: auto;
+        color: cyan;
+        background: rgb(0, 0, 0);
+        padding-top: 38px;
+        padding-bottom: 38px;
+        padding-right: 33px;
+        padding-left: 33px;
+        font-weight: bolder;
+    }
+    
+    p {
+        font-size: 50px;
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bolder;
+        margin: 10px;
+        margin-top: 20%;
+        color: cyan;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: Roboto;
+        text-align: center;
+        margin: 10px;
+        color: red;
+    }
+
+    h2 {
+        margin-bottom: 5%;
+    }
+</style>
+<title> E </title>
+    <span>
+        <div id="content">
+            <p>Black Tabs</p>
+            <h1>Enter Web Address</h1>
+            <input autofocus type="text" id="text">
+        </div>
+        <iframe id="iframe" frameborder="0" width="0%" height="0%"></iframe>
+    </span>
+<script>
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode === 13) {
+                var text = "https://" + document.getElementById("text").value;
+                document.getElementById('iframe').src = text;
+                document.getElementById("content").innerHTML = '';
+                document.getElementById('iframe').height = "100%";
+                document.getElementById('iframe').width = "100%";
+            }
+        });
+</script>
+
+
+<html>
+<body>
+
+<h1> Use "thesimpleublocker.com" to access soundcloud and other sites</h1>
+    
+</body>
+</html>
