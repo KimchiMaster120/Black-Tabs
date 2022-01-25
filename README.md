@@ -1,2 +1,2 @@
-# Haha I go game
-KimchiMaster120.github.io/BlackTabs
+# This is intended for research use only
+I am not responsible for any unauthorized, unlawful, or otherwise prohibited uses.
