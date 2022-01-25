@@ -1,2 +1,2 @@
 # This is intended for research use only
-I am not responsible for any unauthorized, unlawful, or otherwise prohibited uses.
+The creator of this website is not responsible for any unauthorized, unlawful, or otherwise prohibited uses.
