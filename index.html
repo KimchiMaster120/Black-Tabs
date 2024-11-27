@@ -67,7 +67,7 @@
 <script>
         document.addEventListener('keydown', function (event) {
             if (event.keyCode === 13) {
-                var text = "https://" + document.getElementById("text").value;
+                var text = "https://www." + document.getElementById("text").value;
                 document.getElementById('iframe').src = text;
                 document.getElementById("content").innerHTML = '';
                 document.getElementById('iframe').height = "95%";
